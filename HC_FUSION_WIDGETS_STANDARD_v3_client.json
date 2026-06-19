@@ -1,0 +1,863 @@
+{
+  "exportType": "fusionWidgets",
+  "exportVersion": 1,
+  "widgets": [
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "tmdbDiscover",
+        "payload": {
+          "type": "movie",
+          "releaseStatus": "released",
+          "sortBy": "primary_release_date.desc",
+          "releaseChannel": "digital"
+        }
+      },
+      "id": "tmdb.hc.e2ea4294-9c5c-46fa-b1b2-7bc6331a85ad",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Nouveautés — Films",
+      "type": "row.classic"
+    },
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "tmdbDiscover",
+        "payload": {
+          "type": "movie",
+          "releaseStatus": "released",
+          "sortBy": "popularity.desc",
+          "releaseChannel": "digital"
+        }
+      },
+      "id": "tmdb.hc.68bed9f9-826e-4dc3-adfd-a442896cf777",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Films populaires",
+      "type": "row.classic.numbered"
+    },
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "tmdbDiscover",
+        "payload": {
+          "type": "movie",
+          "releaseStatus": "released",
+          "sortBy": "vote_average.desc",
+          "releaseChannel": "digital",
+          "voteCountGte": 5000
+        }
+      },
+      "id": "tmdb.hc.11356781-836c-40c2-bbcc-e5622e672284",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Top IMDb 250 — Films",
+      "type": "row.classic.numbered"
+    },
+    {
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "includeGenres": [
+                      28
+                    ],
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "popularity.desc",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "0030C3E5-A52D-4F13-B4E1-4E3D68D7FDE6",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/genres/genre-action.png",
+              "title": "Action"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "includeGenres": [
+                      12
+                    ],
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "popularity.desc",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "8B84FD2A-7A23-42E3-B2CC-8527E4A294D5",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/genres/genre-adventure.png",
+              "title": "Aventure"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "includeGenres": [
+                      35
+                    ],
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "popularity.desc",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "5D56EB68-BF1E-4E2E-88B4-C9B6612C41F7",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/genres/genre-comedy.png",
+              "title": "Comédie"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "includeGenres": [
+                      878
+                    ],
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "popularity.desc",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "3712439C-2822-41FD-B8FA-03A5E14E983A",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/genres/genre-sci-fi.png",
+              "title": "Science-fiction"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "includeGenres": [
+                      27
+                    ],
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "popularity.desc",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "7864EB52-3572-4ADA-BB0F-31B1DFC006EB",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/genres/genre-horror.png",
+              "title": "Horreur"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "includeGenres": [
+                      53
+                    ],
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "popularity.desc",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "BB18BDDE-7A77-4670-8EDC-44892E6813BF",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/genres/genre-thriller.png",
+              "title": "Thriller"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "includeGenres": [
+                      10751
+                    ],
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "popularity.desc",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "62987233-F4F5-4E36-A1D8-53A1E62FFE68",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/genres/genre-kids.png",
+              "title": "Famille / Kids"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "includeGenres": [
+                      16
+                    ],
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "popularity.desc",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "4A9FA8FC-6E5E-4B11-8E0E-47EB4CB3B1FC",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/genres/genre-animation.png",
+              "title": "Animation"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "includeGenres": [
+                      18
+                    ],
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "popularity.desc",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "2F653A46-926B-4689-99E7-69E95C29EFD5",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/genres/genre-drama.png",
+              "title": "Drame"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "includeGenres": [
+                      80
+                    ],
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "popularity.desc",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "D6C40CB3-77E2-49B2-92EF-1EE1F17F797E",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/genres/genre-crime.png",
+              "title": "Crime"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "includeGenres": [
+                      99
+                    ],
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "popularity.desc",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "87DB9564-ABDB-450C-8ABF-FAE89CD14946",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/genres/genre-documentary.png",
+              "title": "Documentaire"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "tmdbDiscover",
+                  "payload": {
+                    "includeGenres": [
+                      14
+                    ],
+                    "releaseChannel": "digital",
+                    "releaseStatus": "released",
+                    "sortBy": "popularity.desc",
+                    "type": "movie"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "C23EBF79-CC87-4CDE-BFA1-E4F86043176F",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/genres/genre-fantasy.png",
+              "title": "Fantastique"
+            }
+          ]
+        }
+      },
+      "id": "collection.A24B50FF-FD03-4B22-8156-29EB9736CCF8",
+      "title": "Genres de films",
+      "type": "collection.row"
+    },
+    {
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "007",
+                    "listSlug": "james-bond",
+                    "traktId": 31788775,
+                    "username": "drjenkins"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "007",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/collections/collection-007.png",
+              "title": "007"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Alien",
+                    "listSlug": "alien",
+                    "traktId": 31821017,
+                    "username": "drjenkins"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "alien",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/collections/collection-alien.png",
+              "title": "Alien"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Retour vers le futur",
+                    "listSlug": "back-to-the-future",
+                    "traktId": 32199686,
+                    "username": "drjenkins"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "back-to-the-future",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/collections/collection-back-to-the-future.png",
+              "title": "Retour vers le futur"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Harry Potter",
+                    "listSlug": "harry-potter-collection",
+                    "traktId": 32378710,
+                    "username": "vanbushi"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "harry-potter",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/collections/collection-harry-potter.png",
+              "title": "Harry Potter"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Marvel",
+                    "listSlug": "marvel-cinematic-universe",
+                    "traktId": 32377421,
+                    "username": "vanbushi"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "marvel",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/collections/collection-marvel.png",
+              "title": "Marvel"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Matrix",
+                    "listSlug": "matrix",
+                    "traktId": 24891175,
+                    "username": "sjmarsenal85"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "matrix",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/collections/collection-matrix.png",
+              "title": "Matrix"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Mission Impossible",
+                    "listSlug": "mission-impossible-collection",
+                    "traktId": 32378615,
+                    "username": "vanbushi"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "mission-impossible",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/collections/collection-mission-impossible.png",
+              "title": "Mission Impossible"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Star Wars",
+                    "listSlug": "star-wars-collection",
+                    "traktId": 32379017,
+                    "username": "vanbushi"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "star-wars",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/collections/collection-star-wars.png",
+              "title": "Star Wars"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Le Seigneur des anneaux",
+                    "listSlug": "middle-earth",
+                    "traktId": 32242000,
+                    "username": "drjenkins"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "the-lord-of-the-rings",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/collections/collection-the-lord-of-the-rings.png",
+              "title": "Le Seigneur des anneaux"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "John Wick",
+                    "listSlug": "john-wick-collection",
+                    "traktId": 32382577,
+                    "username": "vanbushi"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "john-wick",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/collections/collection-john-wick.png",
+              "title": "John Wick"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Jurassic Park",
+                    "listSlug": "jurassic-park-collection",
+                    "traktId": 32378934,
+                    "username": "vanbushi"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "jurassic-park",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/collections/collection-jurassic-park.png",
+              "title": "Jurassic Park"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Fast & Furious",
+                    "listSlug": "the-fast-furious-universe",
+                    "traktId": 11362509,
+                    "username": "mri8879"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "fast-and-furious",
+              "imageAspect": "poster",
+              "imageURL": "https://raw.githubusercontent.com/Callandt/Fusion2-Content/main/posters/collections/collection-fast-furious.png",
+              "title": "Fast & Furious"
+            }
+          ]
+        }
+      },
+      "id": "collection.17189E89-801C-4551-8B6A-144A02CA8DF1",
+      "title": "Collections de films",
+      "type": "collection.row"
+    },
+    {
+      "dataSource": {
+        "kind": "collection",
+        "payload": {
+          "items": [
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular 2020s Movies",
+                    "listSlug": "popular-2020s-movies",
+                    "traktId": 33032971,
+                    "username": "snoak"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "516815F7-3EDD-4046-9842-01F6C88381F9",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/2020s-wide.jpg",
+              "title": "Années 2020"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular 2010s Movies",
+                    "listSlug": "popular-2010s-movies",
+                    "traktId": 33032968,
+                    "username": "snoak"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "169F73F1-7530-46F1-9F3F-87BF1E3CD56B",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/2010s-wide.jpg",
+              "title": "Années 2010"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular 2000s Movies",
+                    "listSlug": "popular-2000s-movies",
+                    "traktId": 33032965,
+                    "username": "snoak"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "C09031B8-8CF2-4B22-8CF6-F67CD9606316",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/2000s-wide.jpg",
+              "title": "Années 2000"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular 1990s Movies",
+                    "listSlug": "popular-1990s-movies",
+                    "traktId": 33032959,
+                    "username": "snoak"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "826991A2-B61C-4707-885E-5EE2DFF8DEBA",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/1990s-wide.jpg",
+              "title": "Années 1990"
+            },
+            {
+              "dataSources": [
+                {
+                  "kind": "traktList",
+                  "payload": {
+                    "listName": "Popular 1980s Movies",
+                    "listSlug": "popular-1980s-movies",
+                    "traktId": 33032956,
+                    "username": "snoak"
+                  }
+                }
+              ],
+              "hideTitle": true,
+              "id": "2A3378EB-A8C5-4EC1-9B93-6264E946940E",
+              "imageAspect": "wide",
+              "imageURL": "https://raw.githubusercontent.com/itsrenoria/fusion-starter-kit/refs/heads/main/resources/widgets/decades/wide/rdnoni/1980s-wide.jpg",
+              "title": "Années 1980"
+            }
+          ]
+        }
+      },
+      "id": "collection.0FA11094-5BAB-4079-818A-46580B0DFE7E",
+      "title": "Décennies de films",
+      "type": "collection.row"
+    },
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "tmdbDiscover",
+        "payload": {
+          "type": "show",
+          "releaseStatus": "released",
+          "sortBy": "first_air_date.desc"
+        }
+      },
+      "id": "tmdb.hc.49bf3a05-649d-4c84-9f90-472ac0e4aa63",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Nouveautés — Séries",
+      "type": "row.classic"
+    },
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "tmdbDiscover",
+        "payload": {
+          "type": "show",
+          "releaseStatus": "released",
+          "sortBy": "popularity.desc"
+        }
+      },
+      "id": "tmdb.hc.f306fb01-cef0-494b-bf96-cfbef1c68d68",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Séries populaires",
+      "type": "row.classic.numbered"
+    },
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Latest Netflix Shows",
+          "listSlug": "latest-netflix-shows",
+          "traktId": 33032846,
+          "username": "snoak"
+        }
+      },
+      "id": "trakt.D1A2E736-5EA3-4C94-9A62-B002ED473D89",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Séries Netflix récentes",
+      "type": "row.classic"
+    },
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Latest Amazon Prime Shows",
+          "listSlug": "latest-amazon-prime-shows",
+          "traktId": 33032850,
+          "username": "snoak"
+        }
+      },
+      "id": "trakt.1CB178A7-C44C-456A-AF13-0ACC3F962D97",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Séries Prime Video récentes",
+      "type": "row.classic"
+    },
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Latest Disney+ Shows",
+          "listSlug": "latest-disney-shows",
+          "traktId": 33032860,
+          "username": "snoak"
+        }
+      },
+      "id": "trakt.679DDD31-0646-4848-A0BE-A6F824FE8880",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Séries Disney+ récentes",
+      "type": "row.classic"
+    },
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Latest HBO Max Shows",
+          "listSlug": "latest-hbo-max-shows",
+          "traktId": 33032872,
+          "username": "snoak"
+        }
+      },
+      "id": "trakt.6E193CC1-A058-4D61-8F05-E5F2F1A446F2",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Séries HBO / Max récentes",
+      "type": "row.classic"
+    },
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Latest Paramount+ Shows",
+          "listSlug": "latest-paramount-shows",
+          "traktId": 33032863,
+          "username": "snoak"
+        }
+      },
+      "id": "trakt.AA91B6A1-F5C2-4367-90CB-FD65161AE503",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Séries Paramount+ récentes",
+      "type": "row.classic"
+    },
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Latest Apple TV+ Shows",
+          "listSlug": "latest-apple-tv-shows",
+          "traktId": 33032855,
+          "username": "snoak"
+        }
+      },
+      "id": "trakt.70F4CCD2-0474-4B55-A6CC-902FF56D3672",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "Séries Apple TV+ récentes",
+      "type": "row.classic"
+    }
+  ]
+}
