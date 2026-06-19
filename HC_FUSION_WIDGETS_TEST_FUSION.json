@@ -1,0 +1,30 @@
+{
+  "exportType": "fusionWidgets",
+  "exportVersion": 1,
+  "widgets": [
+    {
+      "cacheTTL": 3600,
+      "dataSource": {
+        "kind": "traktList",
+        "payload": {
+          "listName": "Trending Movies",
+          "listSlug": "trending-movies",
+          "traktId": 33032593,
+          "username": "snoak"
+        }
+      },
+      "id": "trakt.13ED61FB-3318-412B-802F-AD2FD3A06F98",
+      "limit": 50,
+      "presentation": {
+        "aspectRatio": "poster",
+        "badges": {
+          "providers": false,
+          "ratings": true
+        },
+        "cardStyle": "medium"
+      },
+      "title": "TEST — Films tendance",
+      "type": "row.classic.numbered"
+    }
+  ]
+}
